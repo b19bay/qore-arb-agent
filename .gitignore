@@ -1,0 +1,22 @@
+# Dependencies & build outputs
+node_modules/
+dist/
+out/
+cache/
+broadcast/
+*.tsbuildinfo
+
+# Environment & secrets — NEVER commit. Agent/owner keys live ONLY in
+# environment at runtime (local .env, git-ignored).
+.env
+.env.*
+!.env.example
+
+# Run artifacts (regenerable from chain; keep the repo clean)
+agent/run-log-*.json
+agent/audit-log-*.json
+agent/audit-log-*.csv
+
+# Editor / OS
+.DS_Store
+*.log

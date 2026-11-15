@@ -1,0 +1,15 @@
+{
+  "name": "qore-arb-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Off-chain arbitrage agent for the QoreChain AgentVault (Build Before Q-Day)",
+  "scripts": {
+    "test": "node --test decision.test.mjs",
+    "run": "node run-agent.mjs",
+    "audit": "node export-audit-log.mjs"
+  },
+  "dependencies": {
+    "viem": "^2.31.0"
+  }
+}
